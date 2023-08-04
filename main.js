@@ -17,13 +17,13 @@ const glados = async () => {
       headers,
     }).then((r) => r.json())
     return [
-      '458819256签到成功',
+      'iamzjpbit/458819256/签到成功',
       `${checkin.message}`,
       `Left Days ${Number(status.data.leftDays)}`,
     ]
   } catch (error) {
     return [
-      '458819256签到失败',
+      'iamzjpbit/458819256/签到失败',
       `${error}`,
       `<${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}>`,
     ]
